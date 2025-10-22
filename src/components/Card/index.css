@@ -1,0 +1,48 @@
+.card{
+    background-color: white;
+    border: 1px solid transparent;
+    width: 198px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border-radius: 10px;
+    margin: 10px;
+     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+}
+.image{
+    width: 165px;
+    height: 148px;
+
+}
+.bookname{
+    /* border: 1px solid red; */
+     font-size: 10px;
+    height: 13px;
+    width: 172px;
+    text-align: center;
+    margin-bottom: 2px;
+     line-height: 9px;
+}
+.authorname{
+    color: rgb(32, 32, 32);
+    /* border:1px solid purple; */
+    height: 9px;
+    width: 126px;
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+   
+    /* padding: 2px; */
+}
+.card-button{
+    font-size: 10px;
+    padding: 5px;
+    color: white;
+    background-color: #11224E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

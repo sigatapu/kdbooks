@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Baloo+Bhaijaan+2:wght@400..800&family=Caveat:wght@400..700&family=Commissioner:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;;
+}
+
+body{
+  background-color: beige;
+}
+.main{
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* Container for search bar */
+.search-bar {
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  position: sticky; /* optional: stays visible when scrolling */
+  top: 0;
+  z-index: 100;
+}
+
+/* Search input styling */
+.search-bar input {
+  width: 60%;
+  max-width: 450px;
+  padding: 12px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* When typing or focusing */
+.search-bar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Placeholder text style */
+.search-bar input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Optional hover effect */
+.search-bar input:hover {
+  border-color: #999;
+}
