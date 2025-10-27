@@ -81,7 +81,7 @@ export const bookData = [
   },
   {
     id: 11, // Reusing ID 10 for the tenth book in the list
-    image: "http://m.media-amazon.com/images/I/61wwAomEffL.jpg",
+    image: "https://m.media-amazon.com/images/I/61wwAomEffL.jpg",
     name: "Influence: The Psychology of Persuasion",
     author: "Robert Cialdini",
     read: "/The Psychology of Persuasion.pdf"
