@@ -48,13 +48,7 @@ export const bookData = [
     read: "/The Subtle Art of Not Giving a Fck.pdf"
   },
   // 7 - Grokking Data Structures
-  {
-    id: 7, // Reusing ID 7 for the seventh book in the list
-    image: "https://m.media-amazon.com/images/I/91hYIGWvKaL.jpg",
-    name: "Grokking Data Structures",
-    author: "Placeholder Author",
-    read: "/grokking-data-structures.pdf"
-  },
+
   // 8 - The Prince
   {
     id: 8, // Reusing ID 8 for the eighth book in the list
