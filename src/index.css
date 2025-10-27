@@ -1,60 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Baloo+Bhaijaan+2:wght@400..800&family=Caveat:wght@400..700&family=Commissioner:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
-body{
-  background-color: beige;
+/* --- 1. Body: Dark Theme Background --- */
+body {
+  background-color: #0f1113; /* Deep dark gray */
+  color: #e9ecef; /* Soft white text */
 }
-.main{
-  /* border: 1px solid green; */
+
+/* --- Main container for cards --- */
+.main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   width: 100%;
 }
-/* Container for search bar */
+
+/* --- Search Bar: Dark and minimal --- */
 .search-bar {
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: #161a1d; /* Dark surface color */
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  position: sticky; /* optional: stays visible when scrolling */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #2a2f33;
 }
 
-/* Search input styling */
+/* --- Search Input --- */
 .search-bar input {
   width: 60%;
   max-width: 450px;
   padding: 12px 18px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #2f3439;
   border-radius: 25px;
   outline: none;
-  transition: all 0.3s ease;
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: #1c1f23;
+  color: #f1f3f5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* When typing or focusing */
 .search-bar input:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  border-color: #1A938C;
+  box-shadow: 0 0 0 4px rgba(26, 147, 140, 0.2);
 }
 
-/* Placeholder text style */
 .search-bar input::placeholder {
-  color: #999;
+  color: #868e96;
   font-style: italic;
 }
 
-/* Optional hover effect */
 .search-bar input:hover {
-  border-color: #999;
+  border-color: #3a4046;
+}
+
+/* --- Login Page: Dark Gradient Theme --- */
+.login-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0b0e11, #111518, #0f2e2c);
+  font-family: "Poppins", sans-serif;
+}
+
+.login-page h2 {
+  color: #1A938C;
+  margin-bottom: 25px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(26, 147, 140, 0.4);
+}
+
+/* --- Form Box --- */
+.login-page form {
+  background: #161a1d;
+  border: 1px solid #2f3439;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  transition: box-shadow 0.3s ease;
+}
+
+.login-page form:hover {
+  box-shadow: 0 8px 30px rgba(26, 147, 140, 0.25);
+}
+
+/* --- Inputs --- */
+.login-page input {
+  background: #1c1f23;
+  border: 1px solid #2f3439;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  outline: none;
+  color: #f1f3f5;
+  transition: all 0.3s ease;
+}
+
+.login-page input:focus {
+  background: #212529;
+  border-color: #1A938C;
+  box-shadow: 0 0 0 4px rgba(26, 147, 140, 0.2);
+}
+
+.login-page input::placeholder {
+  color: #868e96;
+  font-style: italic;
+}
+
+/* --- Button --- */
+.login-page button {
+  background: #1A938C;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(26, 147, 140, 0.3);
+}
+
+.login-page button:hover {
+  background: #23b0a7;
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(26, 147, 140, 0.6);
+}
+
+.login-page button:active {
+  transform: scale(0.98);
+  background: #157A74;
 }
