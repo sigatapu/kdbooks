@@ -79,5 +79,12 @@ export const bookData = [
     name: "Influence: The Psychology of Persuasion",
     author: "Robert Cialdini",
     read: "/The Psychology of Persuasion.pdf"
+  },
+  {
+    id: 12, // Reusing ID 10 for the tenth book in the list
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-o5kLdMv1IAs1_ZcMRFc-Pj2QkMnK5bI9Jw&s",
+    name: "Atlas Shrugged",
+    author: "Ayn Rand",
+    read: "/Ayn Rand- Atlas Shrugged.pdf"
   }
 ];
