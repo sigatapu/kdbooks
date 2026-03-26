@@ -7,9 +7,9 @@ export const bookData = [
     author: "James Clear",
     read: "/Atomic habits.pdf"
   },
-  // 2 (Completed) - The 48 Laws of Power
+  // 2 - The 48 Laws of Power
   {
-    id: 2, // Reusing ID 2 for the second book in the list
+    id: 2,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbA4NBdsNvLrNkABlMQPqUceL7AUcFvK0U9Q&s",
     name: "The 48 Laws of Power",
     author: "Robert Greene",
@@ -17,7 +17,7 @@ export const bookData = [
   },
   // 3 - Meditations
   {
-    id: 3, // Reusing ID 3 for the third book in the list
+    id: 3,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWHoAr9UNSY4lo3IhDZECE_0uExZn6b7v-QQ&s",
     name: "Meditations",
     author: "Marcus Aurelius",
@@ -25,7 +25,7 @@ export const bookData = [
   },
   // 4 - Thinking, Fast and Slow
   {
-    id: 4, // Reusing ID 4 for the fourth book in the list
+    id: 4,
     image: "https://m.media-amazon.com/images/I/71f6DceqZAL._AC_UF1000,1000_QL80_.jpg",
     name: "Thinking, Fast and Slow",
     author: "Daniel Kahneman",
@@ -33,7 +33,7 @@ export const bookData = [
   },
   // 5 - How to Win Friends and Influence People
   {
-    id: 5, // Reusing ID 5 for the fifth book in the list
+    id: 5,
     image: "https://m.media-amazon.com/images/I/71vK0WVQ4rL._AC_UF1000,1000_QL80_.jpg",
     name: "How to Win Friends and Influence People",
     author: "Dale Carnegie",
@@ -41,17 +41,15 @@ export const bookData = [
   },
   // 6 - The Subtle Art of Not Giving a F*ck
   {
-    id: 6, // Reusing ID 6 for the sixth book in the list
+    id: 6,
     image: "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
     name: "The Subtle Art of Not Giving a F*ck",
     author: "Mark Manson",
     read: "/The Subtle Art of Not Giving a Fck.pdf"
   },
-  // 7 - Grokking Data Structures
-
   // 8 - The Prince
   {
-    id: 8, // Reusing ID 8 for the eighth book in the list
+    id: 8,
     image: "https://m.media-amazon.com/images/I/4117w9ptZnL._AC_UF1000,1000_QL80_.jpg",
     name: "The Prince",
     author: "Niccolò Machiavelli",
@@ -59,7 +57,7 @@ export const bookData = [
   },
   // 9 - The Art of War
   {
-    id: 9, // Reusing ID 9 for the ninth book in the list
+    id: 9,
     image: "https://m.media-amazon.com/images/I/811ez0yerlL._AC_UF1000,1000_QL80_.jpg",
     name: "The Art of War",
     author: "Sun Tzu",
@@ -67,24 +65,34 @@ export const bookData = [
   },
   // 10 - Mastery
   {
-    id: 10, // Reusing ID 10 for the tenth book in the list
+    id: 10,
     image: "https://m.media-amazon.com/images/I/71Z9zJnT4vL.jpg",
     name: "Mastery",
     author: "Robert Greene",
     read: "/Mastery.pdf"
   },
+  // 11 - Influence: The Psychology of Persuasion
   {
-    id: 11, // Reusing ID 10 for the tenth book in the list
+    id: 11,
     image: "https://m.media-amazon.com/images/I/61wwAomEffL.jpg",
     name: "Influence: The Psychology of Persuasion",
     author: "Robert Cialdini",
     read: "/The Psychology of Persuasion.pdf"
   },
+  // 12 - Atlas Shrugged
   {
-    id: 12, // Reusing ID 10 for the tenth book in the list
+    id: 12,
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-o5kLdMv1IAs1_ZcMRFc-Pj2QkMnK5bI9Jw&s",
     name: "Atlas Shrugged",
     author: "Ayn Rand",
     read: "/Ayn Rand- Atlas Shrugged.pdf"
+  },
+  // 13 - Surrounded by Idiots
+  {
+    id: 13,
+    image: "https://listeningbooks.s3.eu-west-2.amazonaws.com/public/books/500x0/16193.jpg",
+    name: "Surrounded by Idiots",
+    author: "Thomas Erikson",
+    read: "/Surrounded by Idiots.pdf"
   }
 ];
