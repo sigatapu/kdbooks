@@ -3,7 +3,11 @@ import Card from './components/Card'
 import { bookData } from './bookData'
 
 const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  // ✅ Persist login state using localStorage
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem("isLoggedIn") === "true"
+  )
+
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [searchTerm, setSearchTerm] = useState('')
@@ -23,9 +27,16 @@ const App = () => {
     e.preventDefault()
     if (username === validUsername && password === validPassword) {
       setIsLoggedIn(true)
+      localStorage.setItem("isLoggedIn", "true") // ✅ save login
     } else {
       alert('Invalid username or password!')
     }
+  }
+
+  // ✅ Logout function
+  const handleLogout = () => {
+    setIsLoggedIn(false)
+    localStorage.removeItem("isLoggedIn")
   }
 
   return (
@@ -55,6 +66,9 @@ const App = () => {
       ) : (
         // Main Books Page
         <>
+          {/* ✅ Logout Button */}
+          
+
           <div className="search-bar">
             <input
               type="text"
@@ -62,6 +76,9 @@ const App = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
+            <div style={{ textAlign: 'right' }}>
+            <button className='card-button' onClick={handleLogout}>Logout</button>
+          </div>
           </div>
 
           <div className="main">
