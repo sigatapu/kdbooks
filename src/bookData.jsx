@@ -94,5 +94,13 @@ export const bookData = [
     name: "Surrounded by Idiots",
     author: "Thomas Erikson",
     read: "/Surrounded by Idiots.pdf"
+  },
+  {
+    id:14,
+    image:"https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1581527774i/41881472.jpg",
+    name : "The Psychology of money",
+    author:"Morgan Housel",
+    read : "/The-Psychology-of-Money.pdf"
+
   }
 ];
