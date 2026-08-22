@@ -14,7 +14,7 @@ const App = () => {
 
   // Set your login credentials here
   const validUsername = 'kd'
-  const validPassword = 'kissmisspandu'
+  const validPassword = 'Krishna_Datta'
 
   // Filter books based on search input
   const filteredBooks = bookData.filter(
